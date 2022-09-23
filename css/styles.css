@@ -6,6 +6,12 @@
     --color-paragraph: rgba(43, 53, 62, 0.7);
 }
 
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 2.4rem;
@@ -27,6 +33,16 @@ p {
     font-size: 21px;
     line-height: 25px;
 }
+
+header {
+    cursor: default;
+}
+
+ul {
+    margin: 0;
+}
+
+/* Hero Section */
 
 .hero-para {
     margin: auto 0 72px 0;
@@ -65,6 +81,11 @@ button {
 .container {
     margin: 0 auto;
     max-width: 1160px;
+    padding: auto 0;
+}
+
+.container.center {
+    text-align: center;
 }
 
 .flexbox {
@@ -88,3 +109,77 @@ img {
     max-width: 100%;
     display: inline-block;
 }
+
+/* Navigation Bar */
+
+/* Links */
+a {
+    text-decoration: none;
+}
+
+/* Icon */
+.icon {
+    width: 100px;
+    height: 100px;
+    margin-top: 45px;
+}
+
+/* List */
+.list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.nav__list {
+    width: auto;
+    display: flex;
+}
+
+/* Nav menu */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--color-primary);
+}
+
+.nav__item {
+    padding: 45px 17px 17px 17px;
+    border-bottom: solid;
+    border-bottom-width: 2px;
+    border-color: var(--color-primary);
+}
+
+.nav__item:hover {
+    border-bottom: solid;
+    border-bottom-width: 1px;
+    border-color: white;
+    transition: 200ms;
+}
+
+.nav__item > a {
+    color: white;
+    cursor: default;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    height: 26px;
+}
+
+.nav__button:hover {
+    border-color: var(--color-primary);
+}
+
+.nav__button > a {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 7px 18.5px;
+}
+
+.nav__button > a:hover {
+    background-color: white;
+    color: var(--color-primary);
+    transition: 200ms;
+}
+

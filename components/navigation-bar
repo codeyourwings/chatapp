@@ -1,0 +1,12 @@
+    <nav class="nav">
+        <svg class="icon">
+            <use xlink:href="images/sprite.svg#chatapp-white"></use>
+        </svg>
+        <ul class="list nav__list">
+            <li class="nav__item"><a href="#">Product</a></li>
+            <li class="nav__item"><a href="#">Services</a></li>
+            <li class="nav__item"><a href="#">Contact</a></li>
+            <li class="nav__item"><a href="#">Log In</a></li>
+            <li class="nav__item nav__button"><a href="#">Try It Free</a></li>
+        </ul>
+    </nav>
